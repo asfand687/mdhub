@@ -1,0 +1,24 @@
+import React from 'react'
+import Bombardier from '../assets/bombardier.png'
+import Aloan from '../assets/aloan.png'
+import Shopify from '../assets/shopify.png'
+import AirCanada from '../assets/aircanada.png'
+import Fasken from '../assets/fasken.png'
+
+
+const HomeBrandsSection = () => {
+  return (
+    <section className="p-12 lg:p-24 font-main text-center text-[2.5rem]">
+      <h2 className="pb-12">We take care of outstanding corporations and their people.</h2>
+      <div className="flex justify-center items-center space-x-10">
+        <img className="w-32" src={Shopify} alt="Shopify"/>
+        <img className="w-24" src={Aloan} alt="Aloan"/>
+        <img className="w-32" src={Bombardier} alt="Bombardier"/>
+        <img className="w-32" src={Fasken} alt="Fasken"/>
+        <img className="w-32" src={AirCanada} alt="Air Canada"/>
+      </div>
+    </section>
+  )
+}
+
+export default HomeBrandsSection

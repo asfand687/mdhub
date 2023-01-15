@@ -1,0 +1,113 @@
+import React from 'react'
+import {FcOk} from 'react-icons/fc'
+import Membership01 from '../assets/membership-01.png'
+import Membership02 from '../assets/membership-02.png'
+import Membership03 from '../assets/membership-03.png'
+import Membership04 from '../assets/membership-04.png'
+import Membership05 from '../assets/membership-05.png'
+import Membership06 from '../assets/membership-06.png'
+
+const HomeMembershipBenefitsSection = () => {
+  return (
+    <section className="max-w-[90rem] mx-auto pb-20 flex">
+        <article className="pl-20 w-full max-w-[700px]">
+          <h2 className="font-main text-5xl max-w-[200px] pb-6">Membership Benefits</h2>
+          <ul className="space-y-3 max-w-[530px]">
+            <li className="flex items-center space-x-2 text-xl text-gray-700">
+              <FcOk/>
+              <p>Free unlimited access to doctors 24/7</p>
+            </li>
+            <li className="flex items-center space-x-2 text-xl text-gray-700">
+              <FcOk/>
+              <p>Free online pharmacy an delivery</p>
+            </li>
+            <li className="flex items-center space-x-2 text-xl text-gray-700">
+              <FcOk/>
+              <p>Free Headspace membership</p>
+            </li>
+            <li className="flex items-center space-x-2 text-xl text-gray-700">
+              <FcOk/>
+              <p>Access to private labs with a 25% discount</p>
+            </li>
+            <li className="flex items-center space-x-2 text-xl text-gray-700">
+              <FcOk/>
+              <p>Mobile nursing and Homecare with a 25% discount</p>
+            </li>
+            <li className="flex items-center space-x-2 text-xl text-gray-700">
+              <FcOk/>
+              <p>Virus testing with 25% discount + free rush service</p>
+            </li>
+            <li className="flex items-center space-x-2 text-xl text-gray-700">
+              <div className="-mt-6">
+                <FcOk/>
+              </div>
+              <p>Access to specialists and mental health professionals with a 15% discount</p>
+            </li> 
+          </ul>
+        </article>
+        <article className="flex-1 space-y-8">
+          <ul className="flex flex-wrap space-x-8">
+            <li className="max-w-[220px] space-y-3">
+              <img className="w-20 h-20 object-cover" src={Membership01} alt="Fitbit"/>
+              <h2 className="font-main text-xl">
+                24/7 unlimited access to medical professionals
+              </h2>
+              <p className="font-body text-xs text-gray-700">
+                Our team of Canadian-certified doctors is available virtually 7 days a week for you and your family
+              </p>
+            </li>
+            <li className="max-w-[220px] space-y-3">
+              <img className="w-20 h-20 object-cover" src={Membership02} alt="Magnifying Glass"/>
+              <h2 className="font-main text-xl">
+                Access to <br/> specialists
+              </h2>
+              <p className="font-body text-xs text-gray-700">
+                Any treatment that may require testing or a nurse intervention may be treated by our mobile nursing team at your home or office
+              </p>
+            </li>
+            <li className="max-w-[220px] space-y-3">
+              <img className="w-20 h-20 object-cover" src={Membership03} alt="Location"/>
+              <h2 className="font-main text-xl">
+                Nursing service at your home or office
+              </h2>
+              <p className="font-body text-xs text-gray-700">
+                Members may also access specialist doctors' care at discounted rates.
+              </p>
+            </li>
+          </ul>
+
+          <ul className="flex flex-wrap space-x-8">
+            <li className="max-w-[220px] space-y-3">
+              <img className="w-20 h-20 object-cover" src={Membership04} alt="Pharmacy"/>
+              <h2 className="font-main text-xl">
+                Online <br/> pharmacy
+              </h2>
+              <p className="font-body text-xs text-gray-700">
+                Same day prescription fulfilment. Birth control, erectile dysfunction, hair loss and acne are just some of the  multiple treatments and prescriptions our team can instantly process.
+              </p>
+            </li>
+            <li className="max-w-[220px] space-y-3">
+              <img className="w-20 h-20 object-cover" src={Membership05} alt="Healthcare"/>
+              <h2 className="font-main text-xl">
+                All your mental & physical <br/> health in one platform
+              </h2>
+              <p className="font-body text-xs text-gray-700">
+                A technology powered platform to create a 360 hub for patients to address most of their mental and physical health requirements.
+              </p>
+            </li>
+            <li className="max-w-[220px] space-y-3">
+              <img className="w-20 h-20 object-cover" src={Membership06} alt="Bilingual and Accessible"/>
+              <h2 className="font-main text-xl">
+                Bilingual and <br/> accessible
+              </h2>
+              <p className="font-body text-xs text-gray-700">
+                Connect to bilingual healthcare professionals via video, phone, or text.
+              </p>
+            </li>
+          </ul>
+        </article>
+    </section>
+  )
+}
+
+export default HomeMembershipBenefitsSection
