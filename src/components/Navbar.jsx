@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../assets/logo.png'
+import { RxDotFilled } from 'react-icons/rx'
 
 const Navbar = () => {
   return (
@@ -9,7 +10,10 @@ const Navbar = () => {
           <img className="w-28" src={Logo} alt="MD Hub"/>
         </article>
         <article className="flex text-xl font-medium flex-1 justify-center space-x-14 font-main">
-          <span>for you</span>
+          <span className="flex items-center space-x-[1px]">
+            <RxDotFilled className="opacity-50" /> 
+            <span>for you</span>
+          </span>
           <span>for family</span>
           <span>for corporate</span>
           <span>for services</span>
