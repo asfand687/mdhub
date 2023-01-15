@@ -9,7 +9,7 @@ const Navbar = () => {
         <article className="lg:pl-12">
           <img className="w-28" src={Logo} alt="MD Hub"/>
         </article>
-        <article className="flex text-xl font-medium flex-1 justify-center space-x-14 font-main">
+        <article className="flex text-xl font-medium flex-1 items-center justify-center space-x-14 font-main">
           <span className="flex items-center space-x-[1px]">
             <RxDotFilled className="opacity-50" /> 
             <span>for you</span>
