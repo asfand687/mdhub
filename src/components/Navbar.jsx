@@ -16,10 +16,10 @@ const Navbar = () => {
         </article>
         <article>
           <div className="lg:pr-28 font-body space-x-6">
-            <button className="rounded-full px-8 py-1 border border-primary text-primary bg-transparent">
+            <button className="rounded-full px-8 py-1 border border-primary font-body text-primary bg-transparent">
               Login
             </button>
-            <button className="rounded-full px-8 py-1 border border-primary text-white bg-primary bg-transparent ">
+            <button className="rounded-full px-8 py-1 border border-primary font-body text-white bg-primary">
               Sign Up
             </button>
           </div>
