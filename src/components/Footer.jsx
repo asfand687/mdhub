@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="font-body text-sm space-y-2">
             <p className="max-w-[230px]">Subscribe to our newsletter for latest news and updates</p>
             <form className="flex space-x-1 text-xs">
-              <input className="px-2 bg-transparent text-white border border-white placeholder:text-white" placeholder="E-mail"/>
+              <input className="px-2 bg-transparent text-white border outline-none border-white placeholder:text-white" placeholder="E-mail" />
               <button className="bg-white text-primary px-3 py-1 hover:opacity-90 transition-opacity ease-in-out duration-300" type="submit">Subscribe</button>
             </form> 
           </div>
