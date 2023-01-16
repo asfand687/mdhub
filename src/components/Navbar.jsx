@@ -7,16 +7,16 @@ const Navbar = () => {
   const [showDrawer, setShowDrawer] = useState(false)
   return (
     <nav>
-      <Drawer showDrawer={showDrawer} />
+      <Drawer showDrawer={showDrawer} close={setShowDrawer} />
       <div className="flex py-4">
         <article className="pl-4 lg:pl-12">
-          <img className="w-28" src={Logo} alt="MD Hub"/>
+          <img className="cursor-pointer w-28" src={Logo} alt="MD Hub" />
         </article>
         <article className="hidden md:flex justify-between text-xl font-medium flex-1 font-main">
           <ul className="flex flex-1 justify-center items-center space-x-14">
-            <li className="flex items-center space-x-[1px]">
-            <RxDotFilled className="opacity-50" /> 
-            <span>for you</span>
+            <li className="relative cursor-pointer hover:opacity-90">
+              <RxDotFilled className="absolute -left-5 top-[6px]" />
+              <span>for you</span>
             </li>
             <li>for family</li>
             <li>for corporate</li>
