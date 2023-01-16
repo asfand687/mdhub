@@ -6,8 +6,8 @@ import Twitter from '../assets/twitter.png'
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white ">
-      <div className="flex justify-center space-x-28 py-12">
+    <footer className="bg-primary text-white">
+      <div className="flex flex-col md:flex-row items-center justify-center md:space-x-28 text-center md:text-left gap-y-6 py-12">
         <header>
           <img className="w-36" src={Logo} alt="Logo"/>
         </header>
@@ -44,12 +44,12 @@ const Footer = () => {
           </div>
         </article>
         </div>
-        <div className="bg-[#5d95b6] text-white font-body text-lg py-4 px-8 2xl:px-12 flex justify-between items-center">
+      <div className="bg-[#5d95b6] text-white font-body md:text-lg py-4 px-8 2xl:px-12 flex flex-col justify-between items-center gap-y-2">
           <p>&copy; 2023 MDHub Inc</p>
           <div className="flex items-center space-x-6">
-            <img className="w-16" src={Facebook} alt="Facebook"/>
-            <img className="w-16" src={Linkedin} alt="Linkedin"/>
-            <img className="w-16" src={Twitter} alt="Twitter"/>
+          <img className="w-12 md:w-16" src={Facebook} alt="Facebook" />
+          <img className="w-12 md:w-16" src={Linkedin} alt="Linkedin" />
+          <img className="w-12 md:w-16" src={Twitter} alt="Twitter" />
           </div>
         </div>
     </footer>

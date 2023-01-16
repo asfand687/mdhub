@@ -4,9 +4,9 @@ import { RxDotFilled } from 'react-icons/rx'
 
 const Navbar = () => {
   return (
-    <nav className="relative">
-      <div className="flex items-center justify-between md:py-4">
-        <article className="pl-4 lg:pl-12">
+    <nav>
+      <div className="flex py-4">
+        <article className="lg:pl-12">
           <img className="w-28" src={Logo} alt="MD Hub"/>
         </article>
         <article className="hidden md:flex justify-between text-xl font-medium flex-1 font-main">
@@ -28,7 +28,7 @@ const Navbar = () => {
             </button>
           </div>
         </article>
-        <article className="md:absolute flex flex-col justify-center space-y-1 top-0 right-0 bg-primary text-white py-6 px-4">
+        <article className="absolute flex flex-col justify-center space-y-1 top-0 right-0 bg-primary text-white py-6 px-4">
           <span className="w-6 h-[2px] bg-white"></span>
           <span className="w-4 h-[2px] bg-white"></span>
         </article>
