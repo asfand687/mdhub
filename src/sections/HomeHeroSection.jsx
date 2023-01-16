@@ -14,11 +14,11 @@ const HomeHeroSection = () => {
           From meeting a doctor to ordering a perscription get the 360 healthcare you need all in one place.
         </p>
         <div className='flex justify-center space-x-6 font-main text-gray-700'>
-          <button className="rounded-full px-8 py-2 border flex items-center space-x-2  border-primary  bg-transparent">
-              <span>Get Started</span> <FiArrowUpRight className="text-lg"/>
+          <button className="rounded-full group hover:ring-1 hover:ring-primary px-8 py-2 border flex items-center space-x-2  border-primary  bg-transparent">
+            <span>Get Started</span> <FiArrowUpRight className="text-lg transition-colors ease-out duration-150 group-hover:text-primary" />
           </button>
-          <button className="rounded-full px-8 py-2 border flex items-center space-x-2  border-primary  bg-transparent">
-            <span>Login</span> <FiArrowUpRight className="text-lg"/>
+          <button className="rounded-full group hover:ring-1 hover:ring-primary px-8 py-2 border flex items-center space-x-2  border-primary  bg-transparent">
+            <span>Login</span> <FiArrowUpRight className="text-lg transition-colors ease-out duration-150 group-hover:text-primary" />
           </button>
         </div>
       </article>

@@ -39,7 +39,7 @@ const Footer = () => {
             <p className="max-w-[230px]">Subscribe to our newsletter for latest news and updates</p>
             <form className="flex space-x-1 text-xs">
               <input className="px-2 bg-transparent text-white border border-white placeholder:text-white" placeholder="E-mail"/>
-              <button className="bg-white text-primary px-3 py-1" type="submit">Subscribe</button>
+              <button className="bg-white text-primary px-3 py-1 hover:opacity-90 transition-opacity ease-in-out duration-300" type="submit">Subscribe</button>
             </form> 
           </div>
         </article>
