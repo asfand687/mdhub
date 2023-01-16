@@ -9,11 +9,11 @@ import HowItWorksStepsBg from '../assets/how-it-works-steps-bg.png'
 
 const HomeHowItWorksSection = () => {
   return (
-    <section className="py-20 flex items-center max-w-[90rem] mx-auto">
-        <img className="w-[1000px] h-[600px]" src={Banner} alt="How It Works"/>
-        <article className="p-4 shadow-xl -ml-[100px] relative">
+    <section className="py-20 flex flex-col md:flex-row items-center w-full max-w-[90rem] mx-auto">
+      <img className="w-full max-w-[1000px] md:h-[600px]" src={Banner} alt="How It Works" />
+      <article className="p-4 mx-2 md:m-0 shadow-xl -mt-4 md:mt-0 md:-ml-[100px] relative">
           <img className="absolute top-0 left-0 w-full h-full" src={HowItWorksStepsBg} alt="Steps Background"/>
-          <div className="w-[450px] border-2 border-[#00adcc] p-6 space-y-4 relative z-10">
+        <div className="w-full max-w-[450px] border-2 border-[#00adcc] p-6 space-y-4 relative z-10">
             <img className="w-44" src={HowItWorksHeading} alt="How It Works"/>
             <article className="flex items-center justify-between">
               <div className="font-body">
