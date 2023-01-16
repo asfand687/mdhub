@@ -10,10 +10,10 @@ const HomeHeroSection = () => {
       </aside>
       <article className="flex-1 px-4 md:pl-20">
         <h2 className="font-main text-center md:text-left text-4xl md:text-8xl max-w-[700px]">Your health care,  <span className="md:pl-6">in your hands.</span></h2>
-        <p className="font-body text-center font-extralight text-gray-900 md:text-xl py-4 md:py-8 max-w-[630px]">
+        <p className="font-body text-center md:text-left font-extralight text-gray-900 md:text-xl py-4 md:py-8 max-w-[630px]">
           From meeting a doctor to ordering a perscription get the 360 healthcare you need all in one place.
         </p>
-        <div className='flex justify-center space-x-6 font-main text-gray-700'>
+        <div className='flex justify-center md:justify-start space-x-6 font-main text-gray-700'>
           <button className="rounded-full group hover:ring-1 hover:ring-primary px-8 py-2 border flex items-center space-x-2  border-primary  bg-transparent">
             <span>Get Started</span> <FiArrowUpRight className="text-lg transition-colors ease-out duration-150 group-hover:text-primary" />
           </button>

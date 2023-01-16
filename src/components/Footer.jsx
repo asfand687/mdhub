@@ -7,7 +7,7 @@ import Twitter from '../assets/twitter.png'
 const Footer = () => {
   return (
     <footer className="bg-primary text-white">
-      <div className="flex flex-col md:flex-row items-center justify-center md:space-x-28 text-center md:text-left gap-y-6 py-12">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:space-x-28 text-center md:text-left gap-y-6 py-12">
         <header>
           <img className="w-36" src={Logo} alt="Logo"/>
         </header>
