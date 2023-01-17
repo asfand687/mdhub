@@ -15,7 +15,7 @@ const Navbar = () => {
         <article className="hidden md:flex justify-between text-xl font-medium flex-1 font-main">
           <ul className="flex flex-1 justify-center items-center space-x-14">
             <li className="relative cursor-pointer hover:opacity-90">
-              <RxDotFilled className="absolute -left-5 top-[6px]" />
+              <RxDotFilled className="absolute text-primary -left-5 top-[6px]" />
               <span>for you</span>
             </li>
             <li>for family</li>

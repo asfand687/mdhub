@@ -11,7 +11,7 @@ module.exports = {
         body: ["Helvetica"]
       },
       colors: {
-        primary: '#00adcc'
+        primary: '#48ABC8'
       },
       boxShadow: {
         white: "-1px 1px 10px 1px rgba(255,255,255,0.90)",

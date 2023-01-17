@@ -1,5 +1,5 @@
 import React from 'react'
-import {FcOk} from 'react-icons/fc'
+import OkIcon from '../assets/ok-icon.svg'
 import Membership01 from '../assets/membership-01.png'
 import Membership02 from '../assets/membership-02.png'
 import Membership03 from '../assets/membership-03.png'
@@ -14,33 +14,31 @@ const HomeMembershipBenefitsSection = () => {
         <h2 className="w-full font-main text-center md:text-left text-4xl md:text-5xl pb-6">Membership Benefits</h2>
         <ul className="space-y-3 max-w-[530px] md:text-xl px-4 md:px-0">
           <li className="flex items-center space-x-2 text-gray-700">
-              <FcOk/>
+            <img src={OkIcon} alt="Okay" />
               <p>Free unlimited access to doctors 24/7</p>
             </li>
           <li className="flex items-center space-x-2 text-gray-700">
-              <FcOk/>
+            <img src={OkIcon} alt="Okay" />
               <p>Free online pharmacy an delivery</p>
             </li>
           <li className="flex items-center space-x-2 text-gray-700">
-              <FcOk/>
+            <img src={OkIcon} alt="Okay" />
               <p>Free Headspace membership</p>
             </li>
           <li className="flex items-center space-x-2 text-gray-700">
-              <FcOk/>
+            <img src={OkIcon} alt="Okay" />
               <p>Access to private labs with a 25% discount</p>
             </li>
           <li className="flex items-center space-x-2 text-gray-700">
-              <FcOk/>
+            <img src={OkIcon} alt="Okay" />
               <p>Mobile nursing and Homecare with a 25% discount</p>
             </li>
           <li className="flex items-center space-x-2 text-gray-700">
-              <FcOk/>
+            <img src={OkIcon} alt="Okay" />
               <p>Virus testing with 25% discount + free rush service</p>
             </li>
           <li className="flex items-center space-x-2 text-gray-700">
-              <div className="-mt-6">
-                <FcOk/>
-              </div>
+            <img className="-mt-6" src={OkIcon} alt="Okay" />
               <p>Access to specialists and mental health professionals with a 15% discount</p>
             </li> 
           </ul>

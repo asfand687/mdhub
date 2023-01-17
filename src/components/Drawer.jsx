@@ -12,7 +12,7 @@ const Drawer = ({ showDrawer, close }) => {
       <img className='cursor-pointer w-24' src={Logo} alt="MD Hub" />
       <ul className="font-main text-2xl">
         <li className="relative cursor-pointer hover:opacity-90">
-          <RxDotFilled className="absolute -left-5 top-[6px]" />
+          <RxDotFilled className="absolute text-primary -left-5 top-[6px]" />
           <span>for you</span>
         </li>
         <li className="cursor-pointer hover:opacity-90">for family</li>
