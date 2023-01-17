@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/logo.png'
+import Logo from '../assets/logo-white.png'
 import Facebook from '../assets/facebook.png'
 import Linkedin from '../assets/linkedin.png'
 import Twitter from '../assets/twitter.png'
@@ -14,7 +14,7 @@ const Footer = () => {
         <article className="space-y-6">
           <h2 className="font-main text-2xl">Contact Info</h2>
           <ul className="font-body text-sm">
-            <li>Motreal, QC</li>
+            <li>Montreal, QC</li>
             <li>+1 416 222 3333</li>
             <li>info@mdhub.com</li>
           </ul>
@@ -38,18 +38,18 @@ const Footer = () => {
           <div className="font-body text-sm space-y-2">
             <p className="max-w-[230px]">Subscribe to our newsletter for latest news and updates</p>
             <form className="flex space-x-1 text-xs">
-              <input className="px-2 bg-transparent text-white border outline-none border-white placeholder:text-white" placeholder="E-mail" />
-              <button className="bg-white text-primary px-3 py-1 hover:opacity-90 transition-opacity ease-in-out duration-300" type="submit">Subscribe</button>
+              <input className="px-2 rounded bg-transparent text-white border outline-none border-white placeholder:text-white" placeholder="E-mail" />
+              <button className="bg-white rounded text-primary px-3 py-1 hover:opacity-90 transition-opacity ease-in-out duration-300" type="submit">Subscribe</button>
             </form> 
           </div>
         </article>
         </div>
-      <div className="bg-[#5d95b6] text-white font-body md:text-lg py-4 px-8 2xl:px-12 flex flex-col justify-between items-center gap-y-2">
+      <div className="bg-[#5d95b6] text-white font-body md:text-lg py-4 px-8 2xl:px-12 flex flex-col md:flex-row justify-between items-center gap-y-2">
           <p>&copy; 2023 MDHub Inc</p>
           <div className="flex items-center space-x-6">
-          <img className="w-12 md:w-16" src={Facebook} alt="Facebook" />
-          <img className="w-12 md:w-16" src={Linkedin} alt="Linkedin" />
-          <img className="w-12 md:w-16" src={Twitter} alt="Twitter" />
+          <img className="w-8" src={Facebook} alt="Facebook" />
+          <img className="w-8" src={Linkedin} alt="Linkedin" />
+          <img className="w-8" src={Twitter} alt="Twitter" />
           </div>
         </div>
     </footer>
