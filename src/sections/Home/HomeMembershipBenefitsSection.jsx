@@ -1,11 +1,13 @@
 import React from 'react'
-import OkIcon from '../assets/ok-icon.svg'
-import Membership01 from '../assets/membership-01.png'
-import Membership02 from '../assets/membership-02.png'
-import Membership03 from '../assets/membership-03.png'
-import Membership04 from '../assets/membership-04.png'
-import Membership05 from '../assets/membership-05.png'
-import Membership06 from '../assets/membership-06.png'
+import {
+  Membership01,
+  Membership02,
+  Membership03,
+  Membership04,
+  Membership05,
+  Membership06,
+  OkIcon
+} from '../../assets'
 
 const HomeMembershipBenefitsSection = () => {
   return (

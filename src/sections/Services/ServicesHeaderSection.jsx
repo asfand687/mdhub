@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicesCard from '../components/ServicesCard'
+import ServicesCard from '../../components/ServicesCard'
 import { Link, useLocation } from 'react-router-dom'
 import {
   TestingIcon,
@@ -7,16 +7,15 @@ import {
   MedicineIcon,
   NursingIcon,
   PharmacyIcon
-} from '../assets'
+} from '../../assets'
 
 
 const ServicesHeaderSection = () => {
   const location = useLocation()
-  console.log(location.pathname)
   return (
     <section>
-      <h2 className="font-main py-6 text-4xl text-center">Services</h2>
-      <div className="flex justify-center gap-x-6 text-white font-main">
+      <h2 className="font-main py-10 text-4xl text-center">Services</h2>
+      <div className="flex justify-center py-10 gap-x-6 text-white font-main">
         <Link to="/services">
           <ServicesCard title={"virus testing"} bgPrimary={location.pathname === "/services"}>
             <TestingIcon className={`${location.pathname === "/services" ? "text-white" : "text-primary"}`} />

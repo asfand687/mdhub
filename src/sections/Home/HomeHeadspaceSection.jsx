@@ -1,16 +1,16 @@
 import React from 'react'
-import {FiArrowUpRight} from 'react-icons/fi'
-import MentalHealth from '../assets/mental-health-image.png'
+import { FiArrowUpRight } from 'react-icons/fi'
+import { MentalHealth } from '../../assets'
 
 
 const HomeHeadspaceSection = () => {
   return (
-    <section className="flex flex-col-reverse md:flex-row">
+    <section className="flex flex-col-reverse md:flex-row py-52">
       <article className="flex-1">
         <div className="bg-gray-100 p-8 font-body">
           <p className="text-2xl md:text-3xl text-gray-700 max-w-[440px] pb-10 md:pb-44">Speak with the right health care professionals to help get you in the right headspace.</p>
           <p className="text-2xl md:text-3xl flex md:justify-end font-main items-center space-x-2">
-            <span>Dive into our Headspace</span> <FiArrowUpRight/>
+            <span>Dive into our Headspace</span> <FiArrowUpRight />
           </p>
         </div>
 
