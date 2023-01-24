@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Logo from '../assets/logo.png'
 import { RxDotFilled } from 'react-icons/rx'
 import Drawer from './Drawer'
@@ -10,7 +11,9 @@ const Navbar = () => {
       <Drawer showDrawer={showDrawer} close={setShowDrawer} />
       <div className="flex py-4">
         <article className="pl-4 lg:pl-12">
-          <img className="cursor-pointer w-28" src={Logo} alt="MD Hub" />
+          <Link to="/">
+            <img className="cursor-pointer w-28" src={Logo} alt="MD Hub" />
+          </Link>
         </article>
         <article className="hidden md:flex justify-between text-xl font-medium flex-1 font-main">
           <ul className="flex flex-1 justify-center items-center space-x-14">
@@ -20,7 +23,7 @@ const Navbar = () => {
             </li>
             <li>for family</li>
             <li>for corporate</li>
-            <li>for services</li>
+            <Link to="/services">services</Link>
           </ul>
           <div className="lg:pr-24 text-light text-base space-x-4 font-main font-light">
             <button className="rounded-full px-6 py-1 border border-primary text-primary bg-transparent hover:bg-primary hover:text-white transition-all ease-in-out duration-300">
