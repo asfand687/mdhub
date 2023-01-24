@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from '../assets/hero.png'
 import {FiArrowUpRight} from 'react-icons/fi'
+import Button from '../components/Button'
 
 const HomeHeroSection = () => {
   return (
@@ -14,9 +15,9 @@ const HomeHeroSection = () => {
           From meeting a doctor to ordering a perscription get the 360 healthcare you need all in one place.
         </p>
         <div className='flex justify-center md:justify-start space-x-6 font-main text-gray-700'>
-          <button className="rounded-full group hover:ring-1 hover:ring-primary px-8 py-2 border flex items-center space-x-2  border-primary  bg-transparent">
+          <Button>
             <span>See A Doctor</span> <FiArrowUpRight className="text-lg transition-colors ease-out duration-150 group-hover:text-primary" />
-          </button>
+          </Button>
           <button className="rounded-full group hover:ring-1 hover:ring-primary px-8 py-2 border flex items-center space-x-2  border-primary  bg-transparent">
             <span>Sign Up</span> <FiArrowUpRight className="text-lg transition-colors ease-out duration-150 group-hover:text-primary" />
           </button>
