@@ -5,6 +5,8 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Services from './pages/Services'
+import ServicesVirusTesting from './pages/ServicesVirusTesting'
+import ServicesVirtualDoctor from './pages/ServicesVirtualDoctor'
 
 
 function App() {
@@ -16,7 +18,10 @@ function App() {
         <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe] min-h-[calc(100vh-73px)]">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="services" element={<Services />}>
+              <Route index element={<ServicesVirusTesting />} />
+              <Route path="virtual-doctor" element={<ServicesVirtualDoctor />} />
+            </Route>
           </Routes>
         </main>
       <Footer/>
