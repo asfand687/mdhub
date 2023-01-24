@@ -31,6 +31,7 @@ import NeverWaitForDoctorAgainImage from './never-wait-for-doctor.png'
 import MedicalBenefitsBg from './medical-essential-benefits-background.png'
 import Hero from './hero.png'
 import ServiceOfYourNeed from './service-of-your-need.png'
+import ServicesMedicalLaboratoryHero from './services-medical-laboratory-hero.png'
 
 
 export {
@@ -66,7 +67,8 @@ export {
   NeverWaitForDoctorAgainImage,
   MedicalBenefitsBg,
   Hero,
-  ServiceOfYourNeed
+  ServiceOfYourNeed,
+  ServicesMedicalLaboratoryHero
 }
 
 

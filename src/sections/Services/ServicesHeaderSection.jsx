@@ -28,9 +28,13 @@ const ServicesHeaderSection = () => {
           </ServicesCard>
         </Link>
 
-        <ServicesCard title={"medical laboratory"}>
-          <MedicineIcon className="text-primary" />
+        <Link to="/services/medical-laboratory">
+          <ServicesCard title={"medical laboratory"} bgPrimary={location.pathname === "/services/medical-laboratory"}>
+            <MedicineIcon
+              className={`${location.pathname === "/services/medical-laboratory" ? "text-white" : "text-primary"}`}
+            />
         </ServicesCard>
+        </Link>
 
         <ServicesCard title={"nursing & homecare"}>
           <NursingIcon className="text-primary" />

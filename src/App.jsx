@@ -3,7 +3,7 @@ import './App.css'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
-import { Home, Services, ServicesVirusTesting, ServicesVirtualDoctor } from './pages'
+import { Home, Services, ServicesVirusTesting, ServicesVirtualDoctor, ServicesMedicalLaboratory } from './pages'
 
 function App() {
 
@@ -17,6 +17,7 @@ function App() {
             <Route path="services" element={<Services />}>
               <Route index element={<ServicesVirusTesting />} />
               <Route path="virtual-doctor" element={<ServicesVirtualDoctor />} />
+              <Route path="medical-laboratory" element={<ServicesMedicalLaboratory />} />
             </Route>
           </Routes>
         </main>

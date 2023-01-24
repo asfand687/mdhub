@@ -1,11 +1,17 @@
 import React from 'react'
 import DescriptionGrid from '../../components/DescriptionGrid'
 import { ServiceOfYourNeed } from '../../assets'
+import { VirusTestingAndVaccination } from '../../assets'
+
 
 const ServicesVirusTesting = () => {
   return (
     <section className="font-main">
-      <DescriptionGrid title="Virus Testing & Vaccination" />
+      <DescriptionGrid title="Virus Testing & Vaccination" imageSrc={VirusTestingAndVaccination}>
+        <p>
+          Unlimited 24/7 access to Medical advice, diagnosis, and treatment (including prescriptions, lab work, referrals to specialists, and more). Referral to clinics, when necessary.
+        </p>
+      </DescriptionGrid>
       <h2 className="text-4xl font-main text-gray-800 text-center pb-14">Select The Testing Service Of Your Needs</h2>
       <section className="flex justify-center gap-x-12 ">
         <img className="max-w-[500px]" src={ServiceOfYourNeed} alt="Service Of Your Need" />

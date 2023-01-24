@@ -1,15 +1,14 @@
 import React from 'react'
 import Button from './Button'
-import { VirusTestingAndVaccination } from '../assets'
 
-const DescriptionGrid = ({ title }) => {
+const DescriptionGrid = ({ children, title, imageSrc, reverse }) => {
   return (
-    <service className="py-20 flex font-body items-center justify-center gap-x-8">
+    <service className={`py-20 flex font-body items-center justify-center gap-x-8 ${reverse ? 'flex-row-reverse' : ''}`}>
       <article>
         <h2 className="text-4xl font-main text-gray-800">{title}</h2>
-        <p className="w-full max-w-[400px] pt-4 pb-6 text-gray-600 font-light text-sm">
-          Unlimited 24/7 access to Medical advice, diagnosis, and treatment (including prescriptions, lab work, referrals to specialists, and more). Referral to clinics, when necessary.
-        </p>
+        <div className="space-y-4 w-full max-w-[400px] pt-4 pb-6 text-gray-600 font-light text-sm">
+          {children}
+        </div>
         <div className="flex space-x-4 font-main">
           <Button wide>
             See A Doctor
@@ -20,7 +19,7 @@ const DescriptionGrid = ({ title }) => {
         </div>
       </article>
       <article>
-        <img className="w-full max-w-[450px]" src={VirusTestingAndVaccination} alt="Virus Testing & Vaccination" />
+        <img className="w-full max-w-[450px] rounded-[35px]" alt={title} src={imageSrc} />
       </article>
 
     </service>
