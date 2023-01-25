@@ -16,7 +16,7 @@ import {
 function App() {
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden text-gray-800">
       <BrowserRouter>
       <Navbar/>
         <main className="sm:p-0 px-4 py-8 w-full bg-[#f9fafe] min-h-[calc(100vh-73px)]">

@@ -13,7 +13,7 @@ import {
 const ServicesHeaderSection = () => {
   const location = useLocation()
   return (
-    <section>
+    <section className="bg-[#F9F9F9]">
       <h2 className="font-main py-10 text-4xl text-center">Services</h2>
       <div className="flex justify-center items-center py-10 gap-x-6 text-white font-main">
         <Link to="/services">

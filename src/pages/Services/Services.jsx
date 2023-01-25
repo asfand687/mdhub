@@ -4,7 +4,7 @@ import ServicesHeaderSection from '../../sections/Services/ServicesHeaderSection
 
 const Services = () => {
   return (
-    <div>
+    <div className="bg-[#fefefe]">
       <ServicesHeaderSection />
       <Outlet />
     </div>
