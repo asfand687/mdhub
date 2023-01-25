@@ -34,6 +34,11 @@ import ServiceOfYourNeed from './service-of-your-need.png'
 import ServicesMedicalLaboratoryHero from './services-medical-laboratory-hero.png'
 import NursingHeroImage from './nursing-hero-image.png'
 import OnlinePharmacyImage from './online-pharmacy-image.png'
+import ForYouNav01 from './for-you-nav-01.png'
+import ForYouNav02 from './for-you-nav-02.png'
+import ForYouNav03 from './for-you-nav-03.png'
+import ForYouNav04 from './for-you-nav-04.png'
+import ForYouNav05 from './for-you-nav-05.png'
 
 
 export {
@@ -72,7 +77,12 @@ export {
   ServiceOfYourNeed,
   ServicesMedicalLaboratoryHero,
   NursingHeroImage,
-  OnlinePharmacyImage
+  OnlinePharmacyImage,
+  ForYouNav01,
+  ForYouNav02,
+  ForYouNav03,
+  ForYouNav04,
+  ForYouNav05
 }
 
 
