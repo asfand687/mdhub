@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="md:border-b border-primary pb-[2px] md:pb-[6px] shadow">
       <Drawer showDrawer={showDrawer} close={setShowDrawer} />
       <div className="flex py-4">
-        <article className="pl-4 lg:pl-12">
+        <article className="pl-4 w-[294px] flex justify-center">
           <Link to="/">
             <img className="cursor-pointer w-28" src={Logo} alt="MD Hub" />
           </Link>
