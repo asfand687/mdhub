@@ -33,6 +33,7 @@ import Hero from './hero.png'
 import ServiceOfYourNeed from './service-of-your-need.png'
 import ServicesMedicalLaboratoryHero from './services-medical-laboratory-hero.png'
 import NursingHeroImage from './nursing-hero-image.png'
+import OnlinePharmacyImage from './online-pharmacy-image.png'
 
 
 export {
@@ -70,7 +71,8 @@ export {
   Hero,
   ServiceOfYourNeed,
   ServicesMedicalLaboratoryHero,
-  NursingHeroImage
+  NursingHeroImage,
+  OnlinePharmacyImage
 }
 
 
