@@ -5,6 +5,7 @@ import ServicesVirusTesting from "./Services/ServicesVirusTesting";
 import ServicesMedicalLaboratory from "./Services/ServicesMedicalLaboratory";
 import ServicesNursingAndHomecare from "./Services/ServicesNursingAndHomecare";
 import ServicesOnlinePharmacy from "./Services/ServicesOnlinePharmacy";
+import ForYou from './ForYou/ForYou'
 
 export {
   Home,
@@ -13,5 +14,6 @@ export {
   ServicesVirusTesting,
   ServicesMedicalLaboratory,
   ServicesNursingAndHomecare,
-  ServicesOnlinePharmacy
+  ServicesOnlinePharmacy,
+  ForYou
 }
