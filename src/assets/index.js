@@ -4,8 +4,8 @@ import { ReactComponent as MedicineIcon } from './medicine-icon.svg'
 import { ReactComponent as NursingIcon } from './nursing-icon.svg'
 import { ReactComponent as PharmacyIcon } from './pharmacy-icon.svg'
 import { ReactComponent as ArrowIcon } from './arrow-vector.svg'
+import { ReactComponent as OkIcon } from './ok-icon.svg'
 import VirusTestingAndVaccination from './virus-testing-and-vaccination.png'
-import OkIcon from './ok-icon.svg'
 import Bombardier from './bombardier.png'
 import Aloan from './aloan.png'
 import Shopify from './shopify.png'
@@ -44,6 +44,7 @@ import ForYouImage01 from './for-you-image-01.png'
 import ForYouImage02 from './for-you-image-02.png'
 import ForYouImage03 from './for-you-image-03.png'
 import ForYouImage04 from './for-you-image-04.png'
+import AboutHeroImage from './about-hero.png'
 
 
 export {
@@ -92,7 +93,8 @@ export {
   ForYouImage02,
   ForYouImage03,
   ForYouImage04,
-  ArrowIcon
+  ArrowIcon,
+  AboutHeroImage
 }
 
 
