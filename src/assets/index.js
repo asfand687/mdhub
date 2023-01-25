@@ -6,6 +6,7 @@ import { ReactComponent as PharmacyIcon } from './pharmacy-icon.svg'
 import { ReactComponent as ArrowIcon } from './arrow-vector.svg'
 import { ReactComponent as OkIcon } from './ok-icon.svg'
 import { ReactComponent as PhoneIcon } from './phone-icon.svg'
+import { ReactComponent as LocationIcon } from './location-icon.svg'
 import VirusTestingAndVaccination from './virus-testing-and-vaccination.png'
 import Bombardier from './bombardier.png'
 import Aloan from './aloan.png'
@@ -96,7 +97,8 @@ export {
   ForYouImage04,
   ArrowIcon,
   AboutHeroImage,
-  PhoneIcon
+  PhoneIcon,
+  LocationIcon
 }
 
 
