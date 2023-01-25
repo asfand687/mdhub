@@ -5,7 +5,7 @@ import { Hero } from '../../assets'
 
 const HomeHeroSection = () => {
   return (
-    <div className="md:py-20">
+    <div className="md:py-20 bg-white">
       <section className="max-w-[90rem] mx-auto flex flex-col-reverse gap-y-6 md:flex-row items-center relative">
         <aside className="hidden lg:block absolute -left-[70px] 2xl:-left-[150px] top-[430px] text-black opacity-20 transform -rotate-90">
           &copy; 2023 MDHub Inc
