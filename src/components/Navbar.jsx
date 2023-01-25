@@ -20,32 +20,36 @@ const Navbar = () => {
         </article>
         <article className="hidden md:flex justify-between text-xl font-medium flex-1 font-main">
           <ul className="flex flex-1 justify-center items-center space-x-14">
-            <li className="relative cursor-pointer hover:opacity-90">
+            <li className="relative cursor-pointer hover:opacity-90 group">
             {
               location.pathname === '/for-you' && 
               <RxDotFilled className="absolute text-primary -left-5 top-[6px]" />
             }
+              <RxDotFilled className="hidden group-hover:block absolute text-primary -left-5 top-[6px]" />
               <Link to="for-you">for you</Link>
             </li>
-            <li className="relative cursor-pointer hover:opacity-90">
+            <li className="relative cursor-pointer hover:opacity-90 group">
             {
               location.pathname === '/for-family' && 
               <RxDotFilled className="absolute text-primary -left-5 top-[6px]" />
             }
+              <RxDotFilled className="hidden group-hover:block absolute text-primary -left-5 top-[6px]" />
               <Link to="/for-family">for family</Link>
             </li>
-            <li className="relative cursor-pointer hover:opacity-90">
+            <li className="relative cursor-pointer hover:opacity-90 group">
             {
               location.pathname === '/for-corporate' && 
               <RxDotFilled className="absolute text-primary -left-5 top-[6px]" />
             }
+              <RxDotFilled className="hidden group-hover:block absolute text-primary -left-5 top-[6px]" />
               <Link to="/for-corporate">for corporate</Link>
             </li>
-          <li className="relative">
+            <li className="relative group">
             {
               location.pathname.split('/')[1] === 'services' && 
               <RxDotFilled className="absolute text-primary -left-5 top-[6px]" />
             }
+              <RxDotFilled className="hidden group-hover:block absolute text-primary -left-5 top-[6px]" />
             <Link to="/services">services</Link>
           </li>
           </ul>

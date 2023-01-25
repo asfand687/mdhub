@@ -67,7 +67,7 @@ const ServicesOnlinePharmacy = () => {
 
       <div className="font-body w-full max-w-[58rem] mx-auto py-20">
         <h2 className="font-semibold text-xl pb-4">Invoice</h2>
-        <ul className="space-y-4 last:border-b-4">
+        <ul className="space-y-4">
           <li className="flex justify-between border-b-[0.75px] border-dark pb-3">
             <p>Delivery</p>
             <p>Free</p>
