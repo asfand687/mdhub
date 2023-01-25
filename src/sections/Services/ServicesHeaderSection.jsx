@@ -44,9 +44,17 @@ const ServicesHeaderSection = () => {
           </ServicesCard>
         </Link>
 
-        <ServicesCard title={"online pharmacy & delivery"} wideCaption>
-          <PharmacyIcon className="text-primary" />
-        </ServicesCard>
+        <Link to="/services/online-pharmacy">
+          <ServicesCard 
+            title={"online pharmacy & delivery"} 
+            bgPrimary={location.pathname === "/services/online-pharmacy"} 
+            wideCaption
+          >
+            <PharmacyIcon
+             className={`${location.pathname === "/services/online-pharmacy" ? "text-white" : "text-primary"}`}
+            />
+          </ServicesCard>
+        </Link>
       </div>
     </section>
   )
