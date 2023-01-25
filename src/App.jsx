@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import { 
@@ -9,7 +9,8 @@ import {
   ServicesVirusTesting, 
   ServicesVirtualDoctor, 
   ServicesMedicalLaboratory,
-  ServicesNursingAndHomecare 
+  ServicesNursingAndHomecare,
+  ServicesOnlinePharmacy 
 } from './pages'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
               <Route path="virtual-doctor" element={<ServicesVirtualDoctor />} />
               <Route path="medical-laboratory" element={<ServicesMedicalLaboratory />} />
               <Route path="nursing-homecare" element={<ServicesNursingAndHomecare />} />
+              <Route path="online-pharmacy" element={<ServicesOnlinePharmacy />} />
             </Route>
           </Routes>
         </main>
