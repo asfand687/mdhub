@@ -32,6 +32,7 @@ import MedicalBenefitsBg from './medical-essential-benefits-background.png'
 import Hero from './hero.png'
 import ServiceOfYourNeed from './service-of-your-need.png'
 import ServicesMedicalLaboratoryHero from './services-medical-laboratory-hero.png'
+import NursingHeroImage from './nursing-hero-image.png'
 
 
 export {
@@ -68,7 +69,8 @@ export {
   MedicalBenefitsBg,
   Hero,
   ServiceOfYourNeed,
-  ServicesMedicalLaboratoryHero
+  ServicesMedicalLaboratoryHero,
+  NursingHeroImage
 }
 
 

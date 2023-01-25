@@ -3,7 +3,14 @@ import './App.css'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
-import { Home, Services, ServicesVirusTesting, ServicesVirtualDoctor, ServicesMedicalLaboratory } from './pages'
+import { 
+  Home, 
+  Services, 
+  ServicesVirusTesting, 
+  ServicesVirtualDoctor, 
+  ServicesMedicalLaboratory,
+  ServicesNursingAndHomecare 
+} from './pages'
 
 function App() {
 
@@ -18,6 +25,7 @@ function App() {
               <Route index element={<ServicesVirusTesting />} />
               <Route path="virtual-doctor" element={<ServicesVirtualDoctor />} />
               <Route path="medical-laboratory" element={<ServicesMedicalLaboratory />} />
+              <Route path="nursing-homecare" element={<ServicesNursingAndHomecare />} />
             </Route>
           </Routes>
         </main>
