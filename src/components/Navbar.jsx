@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom'
 import Logo from '../assets/logo.png'
 import { RxDotFilled } from 'react-icons/rx'
 import Drawer from './Drawer'
+import { useLocation } from 'react-router-dom'
 
 const Navbar = () => {
   const [showDrawer, setShowDrawer] = useState(false)
+  const location = useLocation()
+
   return (
     <nav className="md:border-b border-primary pb-[2px] md:pb-[6px] shadow">
       <Drawer showDrawer={showDrawer} close={setShowDrawer} />
@@ -18,12 +21,33 @@ const Navbar = () => {
         <article className="hidden md:flex justify-between text-xl font-medium flex-1 font-main">
           <ul className="flex flex-1 justify-center items-center space-x-14">
             <li className="relative cursor-pointer hover:opacity-90">
+            {
+              location.pathname === '/for-you' && 
               <RxDotFilled className="absolute text-primary -left-5 top-[6px]" />
-              <span>for you</span>
+            }
+              <Link to="for-you">for you</Link>
             </li>
-            <li>for family</li>
-            <li>for corporate</li>
+            <li className="relative cursor-pointer hover:opacity-90">
+            {
+              location.pathname === '/for-family' && 
+              <RxDotFilled className="absolute text-primary -left-5 top-[6px]" />
+            }
+              <Link to="/for-family">for family</Link>
+            </li>
+            <li className="relative cursor-pointer hover:opacity-90">
+            {
+              location.pathname === '/for-corporate' && 
+              <RxDotFilled className="absolute text-primary -left-5 top-[6px]" />
+            }
+              <Link to="/for-corporate">for corporate</Link>
+            </li>
+          <li className="relative">
+            {
+              location.pathname.split('/')[1] === 'services' && 
+              <RxDotFilled className="absolute text-primary -left-5 top-[6px]" />
+            }
             <Link to="/services">services</Link>
+          </li>
           </ul>
           <div className="lg:pr-24 text-light text-base space-x-4 font-main font-light">
             <button className="rounded-full px-6 py-1 border border-primary text-primary bg-transparent hover:bg-primary hover:text-white transition-all ease-in-out duration-300">
