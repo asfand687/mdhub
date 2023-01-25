@@ -6,6 +6,7 @@ import ServicesMedicalLaboratory from "./Services/ServicesMedicalLaboratory";
 import ServicesNursingAndHomecare from "./Services/ServicesNursingAndHomecare";
 import ServicesOnlinePharmacy from "./Services/ServicesOnlinePharmacy";
 import ForYou from './ForYou/ForYou'
+import About from './About/About'
 
 export {
   Home,
@@ -15,5 +16,6 @@ export {
   ServicesMedicalLaboratory,
   ServicesNursingAndHomecare,
   ServicesOnlinePharmacy,
-  ForYou
+  ForYou,
+  About
 }
