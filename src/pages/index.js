@@ -10,6 +10,7 @@ import About from './About/About'
 import Contact from './Contact/Contact'
 import Dashboard from './Dashboard/Dashboard'
 import Pricing from './Pricing/Pricing'
+import CorporateOverview from './CorporateOverview/CorporateOverview'
 
 export {
   Home,
@@ -23,5 +24,6 @@ export {
   About,
   Contact,
   Dashboard,
-  Pricing
+  Pricing,
+  CorporateOverview
 }
