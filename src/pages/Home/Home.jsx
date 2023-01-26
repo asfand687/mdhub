@@ -11,7 +11,7 @@ import {
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-white">
       <HomeHeroSection />
       <HomeExploreSolutionsSection />
       <HomeMembershipBenefitsSection />
