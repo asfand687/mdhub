@@ -7,3 +7,16 @@
   font-family: 'Helvetica';
   src: local('Helvetica'), url(./assets/Helvetica.otf) format('opentype');
 }
+
+input:checked+.toggle-switch {
+  transform: translateX(2px);
+  background-color: #3490dc;
+}
+
+input:focus+.toggle-switch {
+  box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
+}
+
+input:checked+.toggle-switch .toggle-circle {
+  transform: translateX(100%);
+}
