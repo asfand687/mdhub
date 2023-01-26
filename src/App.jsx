@@ -15,7 +15,8 @@ import {
   About,
   Contact,
   Dashboard,
-  Pricing
+  Pricing,
+  CorporateOverview
 } from './pages'
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/pricing" element={<Pricing />} />
+            <Route path="/corporate-overview" element={<CorporateOverview />} />
           </Routes>
         </main>
       <Footer/>
