@@ -54,10 +54,10 @@ const Navbar = () => {
           </li>
           </ul>
           <div className="lg:pr-24 text-light text-base space-x-4 font-main font-light">
-            <button className="rounded-full px-6 py-1 border border-primary text-primary bg-transparent hover:bg-primary hover:text-white transition-all ease-in-out duration-300">
+            <button className="rounded-full px-9 py-1 border border-primary text-primary bg-transparent hover:bg-primary hover:text-white transition-all ease-in-out duration-300">
               Login
             </button>
-            <button className="rounded-full px-6 py-1 border border-primary text-white bg-primary hover:bg-transparent hover:text-primary transition-all ease-in-out duration-300">
+            <button className="rounded-full px-9 py-1 border border-primary text-white bg-primary hover:bg-transparent hover:text-primary transition-all ease-in-out duration-300">
               Sign Up
             </button>
           </div>
