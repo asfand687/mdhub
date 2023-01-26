@@ -14,7 +14,8 @@ import {
   ForYou,
   About,
   Contact,
-  Dashboard
+  Dashboard,
+  Pricing
 } from './pages'
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/pricing" element={<Pricing />} />
           </Routes>
         </main>
       <Footer/>

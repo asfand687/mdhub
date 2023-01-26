@@ -9,6 +9,7 @@ import ForYou from './ForYou/ForYou'
 import About from './About/About'
 import Contact from './Contact/Contact'
 import Dashboard from './Dashboard/Dashboard'
+import Pricing from './Pricing/Pricing'
 
 export {
   Home,
@@ -21,5 +22,6 @@ export {
   ForYou,
   About,
   Contact,
-  Dashboard
+  Dashboard,
+  Pricing
 }
