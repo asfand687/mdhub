@@ -7,6 +7,8 @@ import { ReactComponent as ArrowIcon } from './arrow-vector.svg'
 import { ReactComponent as OkIcon } from './ok-icon.svg'
 import { ReactComponent as PhoneIcon } from './phone-icon.svg'
 import { ReactComponent as LocationIcon } from './location-icon.svg'
+import { ReactComponent as ChevronLeft } from './chevron-left.svg'
+import { ReactComponent as ChevronRight } from './chevron-right.svg'
 import VirusTestingAndVaccination from './virus-testing-and-vaccination.png'
 import Bombardier from './bombardier.png'
 import Aloan from './aloan.png'
@@ -47,6 +49,8 @@ import ForYouImage02 from './for-you-image-02.png'
 import ForYouImage03 from './for-you-image-03.png'
 import ForYouImage04 from './for-you-image-04.png'
 import AboutHeroImage from './about-hero.png'
+import MDHubWheelTransparent from './mdhub-wheel-transparent.png'
+
 
 
 export {
@@ -98,7 +102,10 @@ export {
   ArrowIcon,
   AboutHeroImage,
   PhoneIcon,
-  LocationIcon
+  LocationIcon,
+  MDHubWheelTransparent,
+  ChevronLeft,
+  ChevronRight
 }
 
 
