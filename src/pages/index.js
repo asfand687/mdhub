@@ -8,6 +8,7 @@ import ServicesOnlinePharmacy from "./Services/ServicesOnlinePharmacy";
 import ForYou from './ForYou/ForYou'
 import About from './About/About'
 import Contact from './Contact/Contact'
+import Dashboard from './Dashboard/Dashboard'
 
 export {
   Home,
@@ -19,5 +20,6 @@ export {
   ServicesOnlinePharmacy,
   ForYou,
   About,
-  Contact
+  Contact,
+  Dashboard
 }

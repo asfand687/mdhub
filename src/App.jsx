@@ -13,7 +13,8 @@ import {
   ServicesOnlinePharmacy,
   ForYou,
   About,
-  Contact
+  Contact,
+  Dashboard
 } from './pages'
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
             <Route path="/for-you" element={<ForYou />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </main>
       <Footer/>
