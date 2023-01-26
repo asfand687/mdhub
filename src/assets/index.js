@@ -50,6 +50,10 @@ import ForYouImage03 from './for-you-image-03.png'
 import ForYouImage04 from './for-you-image-04.png'
 import AboutHeroImage from './about-hero.png'
 import MDHubWheelTransparent from './mdhub-wheel-transparent.png'
+import CorporateOverview01 from './corporate-overview-01.png'
+import CorporateOverview02 from './corporate-overview-02.png'
+import CorporateOverview03 from './corporate-overview-03.png'
+import CorporateOverview04 from './corporate-overview-04.png'
 
 
 
@@ -105,7 +109,11 @@ export {
   LocationIcon,
   MDHubWheelTransparent,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  CorporateOverview01,
+  CorporateOverview02,
+  CorporateOverview03,
+  CorporateOverview04
 }
 
 
