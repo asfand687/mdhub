@@ -54,6 +54,13 @@ import CorporateOverview01 from './corporate-overview-01.png'
 import CorporateOverview02 from './corporate-overview-02.png'
 import CorporateOverview03 from './corporate-overview-03.png'
 import CorporateOverview04 from './corporate-overview-04.png'
+import ForBabies01 from './for-babies-01.png'
+import ForBabies02 from './for-babies-02.png'
+import ForBabies03 from './for-babies-03.png'
+import ForBabies04 from './for-babies-04.png'
+import ForBabies05 from './for-babies-05.png'
+import ForBabies06 from './for-babies-06.png'
+import ForBabies07 from './for-babies-07.png'
 
 
 
@@ -113,7 +120,14 @@ export {
   CorporateOverview01,
   CorporateOverview02,
   CorporateOverview03,
-  CorporateOverview04
+  CorporateOverview04,
+  ForBabies01,
+  ForBabies02,
+  ForBabies03,
+  ForBabies04,
+  ForBabies05,
+  ForBabies06,
+  ForBabies07
 }
 
 
