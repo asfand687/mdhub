@@ -5,7 +5,7 @@ import { MentalHealth } from '../../assets'
 
 const HomeHeadspaceSection = () => {
   return (
-    <section className="flex flex-col-reverse md:flex-row py-52">
+    <section className="flex flex-col-reverse md:flex-row py-20">
       <article className="flex-1">
         <div className="bg-gray-100 p-8 font-body">
           <p className="text-2xl md:text-3xl text-gray-700 max-w-[440px] pb-10 md:pb-44">Speak with the right health care professionals to help get you in the right headspace.</p>
