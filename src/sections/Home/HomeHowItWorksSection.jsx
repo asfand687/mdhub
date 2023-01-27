@@ -1,12 +1,6 @@
 import React from 'react'
 import {
-  HowItWorksBanner,
-  HowItWorksHeading,
   HowItWorks01,
-  HowItWorks02,
-  HowItWorks03,
-  HowItWorks04,
-  HowItWorksStepsBg
 } from '../../assets'
 import Slider from '../../components/Slider'
 
