@@ -11,6 +11,7 @@ import Contact from './Contact/Contact'
 import Dashboard from './Dashboard/Dashboard'
 import Pricing from './Pricing/Pricing'
 import CorporateOverview from './CorporateOverview/CorporateOverview'
+import ForBabies from './ForBabies/ForBabies'
 
 export {
   Home,
@@ -25,5 +26,6 @@ export {
   Contact,
   Dashboard,
   Pricing,
-  CorporateOverview
+  CorporateOverview,
+  ForBabies
 }
