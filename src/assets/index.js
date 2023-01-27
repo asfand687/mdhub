@@ -9,6 +9,7 @@ import { ReactComponent as PhoneIcon } from './phone-icon.svg'
 import { ReactComponent as LocationIcon } from './location-icon.svg'
 import { ReactComponent as ChevronLeft } from './chevron-left.svg'
 import { ReactComponent as ChevronRight } from './chevron-right.svg'
+import { ReactComponent as ArrowRight } from './arrow-right.svg'
 import VirusTestingAndVaccination from './virus-testing-and-vaccination.png'
 import Bombardier from './bombardier.png'
 import Aloan from './aloan.png'
@@ -127,7 +128,8 @@ export {
   ForBabies04,
   ForBabies05,
   ForBabies06,
-  ForBabies07
+  ForBabies07,
+  ArrowRight
 }
 
 
