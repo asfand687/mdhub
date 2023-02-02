@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { OkIcon } from '../../assets'
 
 const Pricing = () => {
-  const [selectedPackage, setSelectedPackage] = useState("monthly")
+  const [selectedPackage, setSelectedPackage] = useState("yearly")
   return (
     <section className="font-main">
       <header className="bg-[#F9F9F9] pt-20 pb-10 text-center space-y-6">
@@ -15,7 +15,7 @@ const Pricing = () => {
           </article>
           <article
             onClick={() => setSelectedPackage("yearly")}
-            className={`relative ${selectedPackage === "yearly" ? "bg-primary text-white" : "bg-white"} cursor-pointer w-52 h-48 flex justify-center items-center shadow-cardService rounded-3xl`}>
+            className={`relative ${selectedPackage === "yearly" ? "bg-primary text-white" : "bg-white"} cursor-pointer w-52 h-48 flex justify-center items-center shadow-glow rounded-3xl`}>
             <span>Yearly</span>
             <span className={`absolute transition-all ease-in-out duration-200 text-sm font-body ${selectedPackage === "yearly" ? "bottom-4" : "-bottom-8"} left-[73px]`}>
               Best Value
