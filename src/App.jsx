@@ -41,8 +41,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/pricing" element={<Pricing />} />
-            <Route path="/corporate-overview" element={<CorporateOverview />} />
-            <Route path="/for-babies" element={<ForBabies />} />
+            <Route path="/for-corporate" element={<CorporateOverview />} />
+            <Route path="/for-family" element={<ForBabies />} />
           </Routes>
         </main>
       <Footer/>
