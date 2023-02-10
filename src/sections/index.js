@@ -7,6 +7,13 @@ import HomeMembershipCostCtaSection from "./Home/HomeMembershipCostCtaSection";
 import HomeMembershipBenefitsSection from "./Home/HomeMembershipBenefitsSection";
 import ServicesHeaderSection from "./Services/ServicesHeaderSection";
 import ForYouHeaderSection from './ForYou/ForYouHeaderSection'
+import SignupStepOne from "./Signup/SignupStepOne";
+import SignupStepTwo from "./Signup/SignupStepTwo";
+import SignupStepThree from "./Signup/SignupStepThree";
+import FirstFamilyMemberForm from "./Signup/FirstFamilyMemberForm";
+import SecondFamilyMemberForm from "./Signup/SecondFamilyMemberForm";
+import ThirdFamilyMemberForm from "./Signup/ThirdFamilyMemberForm";
+import FourthFamilyMemberForm from "./Signup/FourthFamilyMemberForm";
 
 export {
   HomeHeroSection,
@@ -17,5 +24,12 @@ export {
   HomeMembershipCostCtaSection,
   HomeMembershipBenefitsSection,
   ServicesHeaderSection,
-  ForYouHeaderSection
+  ForYouHeaderSection,
+  SignupStepOne,
+  SignupStepTwo,
+  FirstFamilyMemberForm,
+  SecondFamilyMemberForm,
+  ThirdFamilyMemberForm,
+  FourthFamilyMemberForm,
+  SignupStepThree
 }
