@@ -6,9 +6,77 @@ const SignupStepThree = () => {
   const handleRegisterationFormDataChange = registerationStore(state => state.handleRegisterationFormDataChange)
   const paymentMode = registerationStore(state => state.paymentMode)
   const selectedAccountType = registerationStore(state => state.selectedAccountType)
-  const totalChargedAmount = registerationStore(state => state.totalChargedAmount)
+  const setPaymentMode = registerationStore(state => state.setPaymentMode)
+  const formStep = registerationStore(state => state.formStep)
+  const individualMonthlyFee = registerationStore(state => state.individualMonthlyFee)
+  const individualYearlyFee = registerationStore(state => state.individualYearlyFee)
+  const familyMonthlyFee = registerationStore(state => state.familyMonthlyFee)
+  const familyYearlyFee = registerationStore(state => state.familyYearlyFee)
+
+  /* const handlePaymentModeChange = () => {
+    if (selectedAccountType === "individual") {
+      if (paymentMode === "monthly") {
+        setTotalAmount(individualMonthlyFee * 3)
+      } else {
+        setTotalAmount(individualYearlyFee * 12)
+      }
+    }
+    if (selectedAccountType === "family") {
+      if (paymentMode === "monthly") {
+        setTotalAmount(familyMonthlyFee * 3 * numberOfSelectedFamilyMembers)
+      } else {
+        setTotalAmount(familyYearlyFee * 12 * numberOfSelectedFamilyMembers)
+      }
+    } else {
+      if (numberOfSelectedEmployees > 10 && numberOfSelectedEmployees <= 50) {
+        setTotalAmount(19.99 * 12 * numberOfSelectedEmployees)
+      }
+      if (numberOfSelectedEmployees > 50 && numberOfSelectedEmployees <= 100) {
+        setTotalAmount(17.99 * 12 * numberOfSelectedEmployees)
+      }
+      if (numberOfSelectedEmployees > 100) {
+        setTotalAmount(14.99 * 12 * numberOfSelectedEmployees)
+      }
+    }
+  } */
   return (
-    <section>
+    <section className="space-y-6">
+      <article className="w-full self-start pt-8 pb-4 mb-4 ">
+        <div className="w-full flex justify-between items-center">
+          <article className="border-b-primary flex items-baseline gap-x-6 border-b-[3px] max-w-xs">
+            <h2 className="text-5xl ">Step 3</h2>
+            <div className="font-body text-xl font-light">
+              <div className="text-right">
+                <p>Payment</p>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            {
+              formStep === 2 && (
+                <div className="flex gap-x-4">
+                  <button
+                    onClick={() => setPaymentMode("yearly")}
+                    className={`${paymentMode === 'yearly' ? "bg-primary text-white" : "bg-transparent text-primary"} border-2 border-primary flex flex-col items-center justify-center  rounded-2xl w-28 h-16`}>
+                    <h2 className="text-xl">Yearly</h2>
+                    <h4 className="text-xs">Best Value</h4>
+                  </button>
+                  {
+                    selectedAccountType !== "corporate" &&
+                    <button
+                      onClick={() => setPaymentMode("monthly")}
+                      className={`${paymentMode === 'monthly' ? "bg-primary text-white" : "bg-transparent text-primary"} border-2 border-primary flex flex-col items-center justify-center  rounded-2xl w-28 h-16`}>
+                      <h2 className="text-xl">Monthly</h2>
+                    </button>
+                  }
+                </div>
+              )
+            }
+          </article>
+        </div>
+      </article>
+
       <div className='flex justify-between'>
         <article className="space-y-4">
           <h2 className="text-2xl">Your Order</h2>
