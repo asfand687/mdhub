@@ -1,35 +1,40 @@
-import React, {useEffect} from 'react'
-import { MDHubWheelTransparent, ChevronLeft, ChevronRight } from '../../assets'
-import { calenderData } from '../../constants'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { registerationStore } from '../../store/registerationStore'
+import jwt from 'jwt-decode'
+import { Outlet } from 'react-router-dom'
+import { DashboardUserInfo } from '../../sections'
 
 const Dashboard = () => {
   const navigate = useNavigate()
+  const setUserInfo = registerationStore(state => state.setUserInfo)
+
   useEffect(() => {
     const token = localStorage.getItem("jwtToken")
-    if(!token) navigate("/login")
+    const tokenInfo = token ? jwt(token) : {}
+    if (!token) navigate("/login")
+    const fetchUser = async () => {
+      const response = await fetch(`http://localhost:8080/api/v1/users/${tokenInfo?.id}`, {
+        method: "GET",
+        headers: {
+          "Authorization": `Bearer ${token}`
+        }
+      })
+      const data = await response.json()
+      setUserInfo(data)
+    }
+    token && fetchUser()
   }, [])
+
   return (
     <section className="font-main text-gray-800">
-      <header className="py-16 bg-[#f9f9f9]">
-        <h1 className="text-4xl text-center pb-10">Your MdHub Dashboard</h1>
-        <section className="flex justify-center items-center gap-x-10">
-          <img className="max-w-[490px] -ml-24" src={MDHubWheelTransparent} alt="MD Hub" />
-          <article className="space-y-3">
-            <button className={`rounded-full text-xl group hover:ring-1 hover:ring-primary px-8 py-3 border flex justify-center items-center space-x-2  border-primary bg-transparent`}>
-              Book New Appointment
-            </button>
-            <div className="flex items-center gap-x-2 font-body text-base pl-6">
-              <article className="bg-primary rounded-full w-4 h-4" />
-              <p>2 upcoming appointments</p>
-            </div>
-          </article>
-        </section>
-      </header>
-
-      <section className="py-20">
+      <Outlet />
+      <section className="max-w-7xl mx-auto">
+        <DashboardUserInfo />
+      </section>
+      {/* <section className="py-20">
         <div className="max-w-7xl mx-auto">
-          <section className="pb-20">
+          {<section className="pb-20">
             <h2 className="text-[2rem]">Current Appointments</h2>
             <div className="flex gap-x-2 font-body text-lg">
               <p>Switch to view past appointments</p>
@@ -77,53 +82,10 @@ const Dashboard = () => {
               <span className="text-gray-800 text-3xl">Dec</span>
               <ChevronRight />
             </article>
-          </section>
+          </section>}
 
-          <section className="flex gap-x-16 font-body font-light pb-10">
-            <article className="flex-1 space-y-4">
-              <h2 className="text-4xl font-main font-normal">Your Information</h2>
-              <div className="p-10 bg-[#fbfbfb] rounded-[35px] shadow-cardService space-y-6  border-[0.25px]">
-                <article className="bg-white rounded-[48px] shadow-cardService px-8 py-3 border-[0.25px]">
-                  John
-                </article>
-                <article className="bg-white rounded-[48px] shadow-cardService px-8 py-3 border-[0.25px]">
-                  Smith
-                </article>
-                <article className="bg-white rounded-[48px] shadow-cardService px-8 py-3 border-[0.25px]">
-                  johnsmith@gmail.com
-                </article>
-                <article className="bg-white rounded-[48px] shadow-cardService px-8 py-3 border-[0.25px]">
-                  416-000-0000
-                </article>
-                <article className="bg-white rounded-[48px] shadow-cardService px-8 py-3 border-[0.25px]">
-                  10 Queen St W, Toronto, ON M5H 3X4
-                </article>
-              </div>
-            </article>
-
-            <article className="flex-1 space-y-4">
-              <h2 className="text-4xl font-main font-normal">Your Subscription</h2>
-              <div className="p-10 bg-[#fbfbfb] flex flex-col justify-between rounded-[35px] shadow-cardService space-y-6 border-[0.25px] h-[428px]">
-                <article className="space-y-10">
-                  <div>
-                    <p className="text-sm">Your current subscription plan</p>
-                    <h2 className="font-bold text-2xl tracking-widest">Individual Yearly</h2>
-                  </div>
-                  <div>
-                    <h2 className="font-bold text-4xl">$29.99/month</h2>
-                    <p className="text-sm">Unlimited usage</p>
-                  </div>
-                </article>
-                <article>
-                  <button className={`rounded-full font-main text-lg group hover:ring-1 hover:ring-primary px-12 py-2 border flex justify-center items-center space-x-2  border-primary bg-transparent`}>
-                    Manage
-                  </button>
-                </article>
-              </div>
-            </article>
-          </section>
         </div>
-      </section>
+      </section> */}
 
     </section>
   )
